@@ -1,0 +1,25 @@
+<SetDirectory Id="" Value="[WindowsVolume]\path\to\directory" /> <!-- custom dir -->
+<Directory Id="TARGETDIR" Name="">
+    <%= render custom_directories %>
+    <Directory Id="WINDOWSVOLUME">
+        <Directory Id="ProgramFilesFolder">
+            <Directory Id="CompanyFilesFolder" Name="">
+                <Directory Id="INSTALLFOLDER" Name="">
+                    <%= render install_subdirs %>
+                </Directory>
+            </Directory>
+        </Directory>
+        <Directory Id="ProgramMenuFolder">
+            <Directory Id="ApplicationStartMenuFolder" Name="">
+                <%= render start_menu_subdirs %>
+            </Directory>
+        </Directory>
+        <Directory Id="CommonAppDataFolder">
+            <Directory Id="CompanyDataFolder" Name="">
+                <Directory Id="MyAppDataFolder" Name="">
+                    <%= render appdata_subdirs %>
+                </Directory>
+            </Directory>
+        </Directory>
+    </Directory>
+</Directory>

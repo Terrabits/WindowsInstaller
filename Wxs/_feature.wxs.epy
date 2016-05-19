@@ -1,0 +1,3 @@
+<Feature Id="" Title="" Description="" Level="1">
+    <%= render component_refs %>
+</Feature>

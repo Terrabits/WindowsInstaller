@@ -1,0 +1,7 @@
+<Component Id="" Guid="" Directory="">
+      <RegistryKey Root="HKCU" Key="Software\%ManufacturerFolder%\%ApplicationName%\Uninstall">
+        <RegistryValue Value="" Type="string" KeyPath="yes" />
+      </RegistryKey>
+      <Shortcut Id="" Name="" Directory="" Description="" Icon="" WorkingDirectory="INSTALLFOLDER" Target="[INSTALLFOLDER]\..." />
+      <RemoveFolder Id="" Directory="" On="uninstall" />
+</Component>

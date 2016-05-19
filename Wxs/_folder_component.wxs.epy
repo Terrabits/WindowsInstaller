@@ -1,0 +1,5 @@
+<Component id="" Guid="" Directory="" KeyPath="yes">
+    <CreateFolder Directory="" />
+    <RemoveFile Id="" Directory="" Name="*.*" On="uninstall" />
+    <RemoveFolder Id="" Directory="" On="uninstall" />
+</Component>
