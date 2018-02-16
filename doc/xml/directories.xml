@@ -1,6 +1,9 @@
 <SetDirectory Id="" Value="[WindowsVolume]\path\to\directory" /> <!-- custom dir -->
 <Directory Id="TARGETDIR" Name="">
     <%= render custom_directories %>
+    <Directory Id="DesktopFolder" Name="Desktop">
+      <%= render desktop_subdirs %>
+    </Directory>
     <Directory Id="WINDOWSVOLUME">
         <Directory Id="ProgramFilesFolder">
             <Directory Id="CompanyFilesFolder" Name="">
